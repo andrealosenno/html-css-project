@@ -1,10 +1,11 @@
 $primary-color: #1C1C1C;
-$secondary-color: #7011A7;
+$secondary-color: #FB8B24;
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 @mixin transition-ease {

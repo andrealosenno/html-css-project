@@ -2,4 +2,88 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.home {
+  height: 100vh;
+  padding-top: 40vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, rgba(28, 28, 28, 0.5), rgba(28, 28, 28, 0.3)), url("../img/background.png") center top;
+  background-size: cover;
+  color: #fff;
+}
+.home__name {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+}
+.home__name--last {
+  color: #FB8B24;
+  font-weight: 700;
+}
+
+header {
+  background: #1C1C1C;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  margin: 0 1rem;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+header nav ul li a:hover {
+  transition: all 0.5s ease-in-out;
+  color: #FB8B24;
+}
+
+.active > a {
+  color: #FB8B24;
+}
+
+footer {
+  background: #1C1C1C;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer a {
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+footer a:hover {
+  transition: all 0.5s ease-in-out;
+  color: #FB8B24;
 }/*# sourceMappingURL=main.css.map */
