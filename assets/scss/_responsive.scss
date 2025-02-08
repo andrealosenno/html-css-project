@@ -1,0 +1,25 @@
+@include media-md {
+    .about__bio {
+        width: 95%;
+    }
+
+    .jobs {
+        width: 90vw;
+        grid-template-columns: 1fr;
+    }
+}
+
+@include media-lg {
+    .about__bio {
+        width: 90%;
+    }
+
+    .jobs {
+        width: 80vw;
+        grid-template-columns: 1fr;
+    }
+}
+
+@include media-xl {
+
+}
