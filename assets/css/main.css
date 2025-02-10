@@ -6,12 +6,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .home__name {
-    font-size: 4rem;
-  }
-  .home__name--last {
-    font-size: 2rem;
-  }
   .about {
     padding-bottom: 1rem;
   }
@@ -30,15 +24,6 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .home {
-    padding-top: 20vh;
-  }
-  .home__name {
-    font-size: 3rem;
-  }
-  .home__name--last {
-    font-size: 1.5rem;
-  }
   .about {
     padding-bottom: 0.5rem;
   }
@@ -65,7 +50,6 @@
   background: linear-gradient(to right, rgba(28, 28, 28, 0.5), rgba(28, 28, 28, 0.3)), url("../img/background.png") center top;
   background-size: cover;
   color: #fff;
-  border: 2px white solid;
 }
 .home__name {
   font-size: 5rem;
@@ -104,6 +88,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 .about .jobs__job {
@@ -130,7 +115,8 @@
   background: linear-gradient(to right, rgba(28, 28, 28, 0.5), rgba(28, 28, 28, 0.3)), url("../img/background.png") center top;
   background-size: cover;
   color: #fff;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .contact h2.text-secondary {
   color: #FB8B24 !important;
@@ -142,6 +128,7 @@
 }
 
 header {
+  background: #1C1C1C;
   color: #fff;
   padding: 1rem;
   text-align: center;
@@ -183,6 +170,7 @@ header nav ul li a:hover {
 }
 
 footer {
+  background: #1C1C1C;
   color: #fff;
   padding: 1rem;
   text-align: center;

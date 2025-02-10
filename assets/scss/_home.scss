@@ -13,8 +13,6 @@
     url('../img/background.png') center top;
     background-size: cover;
     color: set-text-color($primary-color);
-    border: 2px white solid;
-
     &__name {
         font-size: 5rem;
         padding-bottom: 1rem;

@@ -1,16 +1,5 @@
 @include media-md {
 
-    .home {
-
-        &__name {
-            font-size: 4rem;
-
-            &--last {
-                font-size: 2rem;
-            }
-        }
-    }
-
     .about {
         padding-bottom: 1rem;
 
@@ -33,19 +22,7 @@
 }
 
 @include media-lg {
-
-    .home {
-        padding-top: 20vh;
-
-        &__name {
-            font-size: 3rem;
-
-            &--last {
-                font-size: 1.5rem;
-            }
-        }
-    }
-
+    
     .about {
         padding-bottom: 0.5rem;
 
