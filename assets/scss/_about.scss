@@ -8,24 +8,7 @@
     ),
     url('../img/background.png') center top;
     background-size: cover;
-    color: set-text-color($primary-color);
-
-       p {
-        margin-top: 50px;
-        margin-bottom: 2rem;
-       }
-
-    &__bio {
-        width: 80%;
-        text-align: center;
-        margin: 0 auto;
-        padding-top: 40px;
-        font-size: 1.5rem;
-
-        .text-secondary {
-            padding-bottom: 1rem;
-        }
-    }
+    color: set-text-color($primary-color);    
 
     .jobs {
         width: 60vw;

@@ -11,8 +11,31 @@
     <meta property="og:title" content="Andrea Losenno - Studente Full Stack Developement" />
     <meta property="og:description" content="Contattami" />
     <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/main.css">   
     <title>Andrea Losenno - Studente Full Stack Developement</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "nKhkO5lU3e_coKrjm",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
     <header>        
@@ -38,20 +61,20 @@
                     <div class="col-md-6">
                         <h2 class="text-secondary">Contattami</h2>
                         <p>Per qualsiasi informazione o domanda, non esitare a contattarmi.</p>
-                        <form action="" method="post">
+                        <form id="contact-form">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="name" name="name">
+                                <input type="text" class="form-control" id="name" name="user_name">
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email">
+                                <input type="email" class="form-control" id="email" name="user_email">
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label">Messaggio</label>
                                 <textarea class="form-control" id="message" name="message" rows="3"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Invia</button>
+                            <button type="submit" value="send" class="btn btn-primary">Invia</button>
                         </form>
                     </div>
         </section>
