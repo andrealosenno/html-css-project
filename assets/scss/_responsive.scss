@@ -11,6 +11,11 @@
             font-size: 3rem;
         }
     }
+
+    .container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 @include media-lg {
