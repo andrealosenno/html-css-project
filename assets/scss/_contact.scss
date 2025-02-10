@@ -1,6 +1,5 @@
 .contact {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -14,7 +13,7 @@
     url('../img/background.png') center top;
     background-size: cover;
     color: set-text-color($primary-color);
-    padding: 2rem; // Aggiungi padding generale
+    padding: 2rem;
 
     h2.text-secondary {
         color: $secondary-color !important;
