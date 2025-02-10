@@ -7,7 +7,7 @@
 
 @media screen and (min-width: 768px) {
   .home {
-    padding-top: 20vh;
+    padding-top: 25vh;
   }
   .home__name {
     font-size: 4rem;
