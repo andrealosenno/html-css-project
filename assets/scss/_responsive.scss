@@ -34,13 +34,37 @@
 }
 
 @include media-lg {
-    .about__bio {
-        width: 90%;
+
+    .home {
+        padding-top: 20vh;
+
+        &__name {
+            font-size: 3rem;
+
+            &--last {
+                font-size: 1.5rem;
+            }
+        }
     }
 
-    .jobs {
-        width: 80vw;
-        grid-template-columns: 1fr;
+    .about {
+        padding-bottom: 0.5rem;
+
+        &__bio {
+            width: 90%;
+            font-size: 1.3rem;
+        }
+
+        .jobs {
+            width: 65vw;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .contact {
+        font-size: 1.2rem;
+        padding-top: 60px;
+        padding-bottom: 70px;
     }
 }
 
