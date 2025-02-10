@@ -13,8 +13,6 @@
     url('../img/background.png') center top;
     background-size: cover;
     color: set-text-color($primary-color);
-    
-    padding-bottom: 60px;
 
     h2.text-secondary {
         color: $secondary-color !important;
@@ -25,8 +23,8 @@
         color: $primary-color;
         font-weight: 700;
     }
-}
 
-.container {
-    height: 80vh;
+    @media screen and (max-width: 768px) {
+        padding-bottom: 5rem;
+    }
 }
