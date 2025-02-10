@@ -6,21 +6,57 @@
 }
 
 @media screen and (min-width: 768px) {
+  .home {
+    top: 10px;
+  }
+  .home__name {
+    font-size: 4rem;
+  }
+  .home__name--last {
+    font-size: 2rem;
+  }
+  .about {
+    padding-bottom: 1rem;
+  }
   .about__bio {
     width: 95%;
+    font-size: 1.2rem;
   }
-  .jobs {
-    width: 90vw;
+  .about .jobs {
+    width: 70vw;
     grid-template-columns: 1fr;
+  }
+  .contact {
+    font-size: 1.5rem;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
   }
 }
 @media screen and (min-width: 1024px) {
+  .home {
+    padding-top: 20vh;
+  }
+  .home__name {
+    font-size: 3rem;
+  }
+  .home__name--last {
+    font-size: 1.5rem;
+  }
+  .about {
+    padding-bottom: 0.5rem;
+  }
   .about__bio {
     width: 90%;
+    font-size: 1.3rem;
   }
-  .jobs {
-    width: 80vw;
-    grid-template-columns: 1fr;
+  .about .jobs {
+    width: 65vw;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact {
+    font-size: 1.2rem;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
   }
 }
 .home {
@@ -32,6 +68,7 @@
   background: linear-gradient(to right, rgba(28, 28, 28, 0.5), rgba(28, 28, 28, 0.3)), url("../img/background.png") center top;
   background-size: cover;
   color: #fff;
+  border: 2px white solid;
 }
 .home__name {
   font-size: 5rem;
@@ -108,7 +145,6 @@
 }
 
 header {
-  background: #1C1C1C;
   color: #fff;
   padding: 1rem;
   text-align: center;
@@ -116,6 +152,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 60px;
   z-index: 100;
 }
 header nav {
@@ -149,7 +186,6 @@ header nav ul li a:hover {
 }
 
 footer {
-  background: #1C1C1C;
   color: #fff;
   padding: 1rem;
   text-align: center;
@@ -157,6 +193,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 60px;
 }
 footer a {
   padding: 10px;

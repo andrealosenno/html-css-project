@@ -1,22 +1,70 @@
 @include media-md {
-    .about__bio {
-        width: 95%;
+
+    .home {
+        top: 10px;
+
+        &__name {
+            font-size: 4rem;
+
+            &--last {
+                font-size: 2rem;
+            }
+        }
     }
 
-    .jobs {
-        width: 90vw;
-        grid-template-columns: 1fr;
+    .about {
+        padding-bottom: 1rem;
+
+        &__bio {
+            width: 95%;
+            font-size: 1.2rem;
+        }
+
+        .jobs {
+            width: 70vw;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .contact {
+        font-size: 1.5rem;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
     }
 }
 
 @include media-lg {
-    .about__bio {
-        width: 90%;
+
+    .home {
+        padding-top: 20vh;
+
+        &__name {
+            font-size: 3rem;
+
+            &--last {
+                font-size: 1.5rem;
+            }
+        }
     }
 
-    .jobs {
-        width: 80vw;
-        grid-template-columns: 1fr;
+    .about {
+        padding-bottom: 0.5rem;
+
+        &__bio {
+            width: 90%;
+            font-size: 1.3rem;
+        }
+
+        .jobs {
+            width: 65vw;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .contact {
+        font-size: 1.2rem;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
     }
 }
 
