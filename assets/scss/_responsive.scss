@@ -1,11 +1,34 @@
 @include media-md {
-    .about__bio {
-        width: 95%;
+
+    .home {
+        padding-top: 30vh;
+
+        &__name {
+            font-size: 4rem;
+
+            &--last {
+                font-size: 2rem;
+            }
+        }
     }
 
-    .jobs {
-        width: 90vw;
-        grid-template-columns: 1fr;
+    .about {
+        padding-bottom: 1rem;
+
+        &__bio {
+            width: 95%;
+            font-size: 1.2rem;
+        }
+
+        .jobs {
+            width: 70vw;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .contact {
+        font-size: 1.5rem;
+        padding-bottom: 30px;
     }
 }
 
