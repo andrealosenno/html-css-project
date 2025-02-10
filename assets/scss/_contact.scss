@@ -13,6 +13,8 @@
     url('../img/background.png') center top;
     background-size: cover;
     color: set-text-color($primary-color);
+    
+    padding-bottom: 60px;
 
     h2.text-secondary {
         color: $secondary-color !important;
@@ -27,5 +29,4 @@
 
 .container {
     height: 80vh;
-    padding-bottom: 60px;
 }
